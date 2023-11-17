@@ -1,0 +1,53 @@
+@import 'variables';
+
+%shape {
+    color: red;
+    front-size: 20px;
+}
+.text{
+    @extend %shape;
+}
+
+textarea{
+    @extend %shape;
+
+}
+h1{
+    @extend %shape;
+
+}
+@mixin button{
+    border: 3px solid yellow;
+}
+.btn{
+    @include button;
+}
+
+@function back-ground ($color){
+    @if ($color == white) {
+        @return black;
+    }
+    @else {
+        @return white;
+    }
+}
+h1{
+    color: back-ground(white);
+}
+
+h2{
+    color: back-ground(black);
+}
+
+@function renvoyer($list){
+    $first : nth( $list, 1);
+    $second : nth($list , -1 );
+    @return ($first,$second)
+}
+.sidebar {
+    float: renvoyer($langages);
+}
+
+
+
+

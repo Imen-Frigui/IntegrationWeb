@@ -1,0 +1,349 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+/*::root{
+    --primary:#FFF;
+}*/
+h1 {
+  color: rgb(0, 0, 0);
+  margin-top: 20%;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.468);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav ul {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+}
+nav li {
+  display: inline;
+  font-size: 1.25rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.75rem;
+}
+nav a:hover {
+  background: color #111;
+}
+
+.btn-primary {
+  color: #326dee;
+  margin-top: 3rem;
+  color: rgb 255, 255, 255;
+}
+
+.btn-primary-light1 {
+  background-color: #477cf0;
+  border: #326dee 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-primary-light1:hover {
+  background-color: #1251db;
+}
+
+.btn-primary-light2 {
+  background-color: #5b8af1;
+  border: #326dee 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-primary-light2:hover {
+  background-color: #1251db;
+}
+
+.btn-primary-light3 {
+  background-color: #7099f3;
+  border: #326dee 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-primary-light3:hover {
+  background-color: #1251db;
+}
+
+.btn-primary-light4 {
+  background-color: #84a7f5;
+  border: #326dee 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-primary-light4:hover {
+  background-color: #1251db;
+}
+
+.btn-primary-light5 {
+  background-color: #99b6f7;
+  border: #326dee 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-primary-light5:hover {
+  background-color: #1251db;
+}
+
+.btn-secondary {
+  color: #ee32a3;
+  margin-top: 3rem;
+  color: rgb 255, 255, 255;
+}
+
+.btn-secondary-light1 {
+  background-color: #f047ac;
+  border: #ee32a3 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-secondary-light1:hover {
+  background-color: #db128b;
+}
+
+.btn-secondary-light2 {
+  background-color: #f15bb5;
+  border: #ee32a3 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-secondary-light2:hover {
+  background-color: #db128b;
+}
+
+.btn-secondary-light3 {
+  background-color: #f370bf;
+  border: #ee32a3 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-secondary-light3:hover {
+  background-color: #db128b;
+}
+
+.btn-secondary-light4 {
+  background-color: #f584c8;
+  border: #ee32a3 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-secondary-light4:hover {
+  background-color: #db128b;
+}
+
+.btn-secondary-light5 {
+  background-color: #f799d1;
+  border: #ee32a3 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-secondary-light5:hover {
+  background-color: #db128b;
+}
+
+.btn-error {
+  color: red;
+  margin-top: 3rem;
+  color: rgb 255, 255, 255;
+}
+
+.btn-error-light1 {
+  background-color: #ff1a1a;
+  border: red 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-error-light1:hover {
+  background-color: #cc0000;
+}
+
+.btn-error-light2 {
+  background-color: #ff3333;
+  border: red 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-error-light2:hover {
+  background-color: #cc0000;
+}
+
+.btn-error-light3 {
+  background-color: #ff4d4d;
+  border: red 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-error-light3:hover {
+  background-color: #cc0000;
+}
+
+.btn-error-light4 {
+  background-color: #ff6666;
+  border: red 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-error-light4:hover {
+  background-color: #cc0000;
+}
+
+.btn-error-light5 {
+  background-color: #ff8080;
+  border: red 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-error-light5:hover {
+  background-color: #cc0000;
+}
+
+.btn-warning {
+  color: rgb(155, 155, 74);
+  margin-top: 3rem;
+  color: rgb 50, 50, 50;
+}
+
+.btn-warning-light1 {
+  background-color: #a5a55c;
+  border: rgb(155, 155, 74) 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-warning-light1:hover {
+  background-color: #78783a;
+}
+
+.btn-warning-light2 {
+  background-color: #afaf6e;
+  border: rgb(155, 155, 74) 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-warning-light2:hover {
+  background-color: #78783a;
+}
+
+.btn-warning-light3 {
+  background-color: #b9b980;
+  border: rgb(155, 155, 74) 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-warning-light3:hover {
+  background-color: #78783a;
+}
+
+.btn-warning-light4 {
+  background-color: #c3c392;
+  border: rgb(155, 155, 74) 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-warning-light4:hover {
+  background-color: #78783a;
+}
+
+.btn-warning-light5 {
+  background-color: #cdcda5;
+  border: rgb(155, 155, 74) 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-warning-light5:hover {
+  background-color: #78783a;
+}
+
+.btn-sucess {
+  color: green;
+  margin-top: 3rem;
+  color: rgb 50, 50, 50;
+}
+
+.btn-sucess-light1 {
+  background-color: #1a8d1a;
+  border: green 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-sucess-light1:hover {
+  background-color: #004d00;
+}
+
+.btn-sucess-light2 {
+  background-color: #339933;
+  border: green 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-sucess-light2:hover {
+  background-color: #004d00;
+}
+
+.btn-sucess-light3 {
+  background-color: #4da64d;
+  border: green 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-sucess-light3:hover {
+  background-color: #004d00;
+}
+
+.btn-sucess-light4 {
+  background-color: #66b366;
+  border: green 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-sucess-light4:hover {
+  background-color: #004d00;
+}
+
+.btn-sucess-light5 {
+  background-color: #80c080;
+  border: green 1px solid;
+  border-radius: 5px;
+  color: white;
+}
+.btn-sucess-light5:hover {
+  background-color: #004d00;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-direction: column;
+  background-color: rgb(44, 89, 172);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-direction: row;
+  background-color: grey;
+}
+
+.box-secondary, .box-primary {
+  padding: 0 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+
+.box-primary {
+  background-attachment: rgb(0, 0, 0);
+}
+
+.box-secondary {
+  background-attachment: red;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,185 @@
+body {
+  overflow-x: hidden;
+  color: #505962;
+}
+
+.service-wrap {
+  z-index: -999 !important;
+}
+
+.service-background {
+  padding: 5rem 0;
+  z-index: 1000 !important;
+  
+}
+
+#contact {
+  z-index: 1000;
+}
+.caption{
+  transform: translateY(-70%);
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  text-transform: uppercase;
+  text-align: center;
+  top: 50%;
+}
+.icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 15rem;
+  list-style: none;
+  font-size: 2rem;
+}
+.icons i{
+  font-size: 2rem;
+
+  color: white;
+}
+.icons i:hover{
+  color: rgb(255, 0, 0);
+}
+
+#service{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 2rem;
+  height: 450px;
+}
+.services{
+  align-items: center;
+  justify-content: space-around;
+}
+#service div{
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+/*============= FOOTER =============*/
+footer{
+  background-color: rgb(50, 49, 49);
+  color: rgb(255, 255, 255);
+}
+footer img {
+  max-width: 100%;
+  height: 50px; 
+  align-items: center;
+  display: block;
+  margin: 0 auto;
+}
+
+/*===== FIXED BACKGROUND IMG =====*/
+.fixed {
+  position: fixed;
+  /* The element is positioned relative to the viewport which means it always stays in the same place even if the page is scrolled.*/
+  display: block;
+  /* An element starts on a new line and takes the whole width. */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  /* The background image covers the entire container even if it's stretched or croped */
+  background-position: center center;
+}
+
+.fixed-background {
+  position: relative;
+  /* The element is positioned relative to its normal position + set the top, bottom... properties to adjust the position */
+  width: 100%;
+}
+
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  /*clip-path: inset(10%, 10%, 10%, 10%);*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+#contact {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.container {
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+#container{
+  align-items: center;
+  text-align: center;
+}
+
+.h1 {
+  display: inline-block;
+  color: #000000;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  padding: 0.5rem 1rem; 
+  margin: 0;
+}
+#a {
+    font-size: large;
+    font: bold;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border-width: 2px;
+    transition: background-color 0.3s;
+}
+
+#a:hover {
+    background-color: #525252;
+}
+
+
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (min-width: 1200px) {
+}
+/* Devices under 992px (lg) */
+@media (max-width: 992px) {
+  
+}
+/* Devices under 768px (md) */
+@media (max-width: 768px) {
+  .caption {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+}
+
+/* Devices under 576px (sm) */
+@media (max-width: 576px) {
+  .caption {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+  }
+}

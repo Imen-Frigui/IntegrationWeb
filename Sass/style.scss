@@ -1,0 +1,102 @@
+@import 'variables';
+//@use instead of @import
+body{
+    background-color: rgb(255, 255, 255);
+}
+//declaration variable en scc
+/*::root{
+    --primary:#FFF;
+}*/
+h1{
+    color: $color-primary;
+    margin-top: 20%;
+    
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.468);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    ul{
+        text-align: center;
+        list-style: none;
+        margin: 0;
+        padding: 1rem;
+    }
+    li{
+        display: inline;
+        font-size: 1.25rem;
+    }
+    a {
+        color: white;
+        text-decoration: none;//take out the inderline that  come wigth the <a>
+        cursor: pointer;
+        padding: 0.75rem;
+        &:hover{
+            background: color #111;
+        }
+    }
+}
+
+@each $key, $value in $colors{
+    .btn-#{$key}{
+        color: $value;
+        margin-top: 3rem;
+        
+    @if (lightness($value)<50%) {
+        color: rgb (50, 50, 50);
+    }
+    @else {
+        color: rgb (255, 255, 255);
+    }
+    }
+
+    @if ($value != black and $value!=white){
+        @for $i from 1 through 5{
+            .btn-#{$key}-light#{$i}{
+                background-color: mix( white, $value, $i*10);
+                border: $value 1px solid;
+                border-radius: 5px;
+                color: white;
+                &:hover{
+                    background-color: darken($value,10%);
+                }
+            }
+        }
+        
+    }
+
+}
+@mixin flex($direction, $color) {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: $direction;
+    background-color: $color;
+}
+.card{
+    @include flex(column,rgb(44, 89, 172));
+}
+.nav {
+    @include flex(row,grey);
+}
+%box-shape{
+    padding: 0.0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0.2);
+}
+.box-primary{
+    @extend %box-shape;
+    background-attachment: $color-primary;
+}
+.box-secondary{
+    @extend %box-shape;
+    background-attachment: $color-secondary;
+}
+
+
+
+
+//declaration variable en sccss
+//$color-primary:rgb(65, 185, 65);
+//$color-secondary:red;
